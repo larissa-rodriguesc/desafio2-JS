@@ -4,23 +4,23 @@ function calculandoRank(vitorias, derrotas){
 }
 
 function rank(){
-    let partidas = calculandoRank(60, 15)
+    let partidas = calculandoRank(116, 15)
     let nivel = ""
 
     if (partidas < 10) {
-        nivel = "Ferro";
+        nivel = "Ferro"
     }else if (partidas < 20) {
-        nivel = "Bronze";
+        nivel = "Bronze"
     } else if (partidas < 50) {
-        nivel = "Prata";
+        nivel = "Prata"
     } else if (partidas < 80) {
-        nivel = "Ouro";
+        nivel = "Ouro"
     } else if (partidas < 90) {
-        nivel = "Diamante";
-    } else if (partidas < 100) {
-        nivel = "Lendário";
+        nivel = "Diamante"
+    } else if (partidas <= 100) {
+        nivel = "Lendário"
     } else if (partidas >= 101) {
-        nivel = "Imortal";
+        nivel = "Imortal"
     }
 
     return `O Herói tem de saldo de ${partidas} e está no nível de ${nivel}` 
